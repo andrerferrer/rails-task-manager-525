@@ -1,0 +1,17 @@
+<h2>
+  <%= @task.title %> |
+  
+  <% if @task.completed %>
+    ✔
+  <% else %>
+    ❌
+  <% end %>
+  
+</h2>
+
+<p>
+  <%= @task.details %>
+</p>
+
+<%= link_to 'Go Back', tasks_path %> |
+<%= link_to 'Edit this task', edit_task_path %>
